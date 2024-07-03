@@ -29,13 +29,57 @@ body {
   min-height: 100vh;
 }
 
+header {
+  margin-bottom: 32px;
+}
+
 #container {
+  font-family: 'outfit', serif;
   background-color: var(--White);
+  border-radius: 24px;
   max-width: 736px;
   border: 1px solid red;
   padding: 40px;
 }
 
 .hero-recipe-img {
+  border-radius: 12px;
+  margin-bottom: 40px;
   width: 100%;
+}
+
+.text-header {
+  color: var(--Dark-Charcoal);
+  font-family: 'Young Serif', sans-serif;
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+
+.recipe-description {
+  color: var(--font);
+  font-family: 'outfit', serif;
+  line-height: 150%;
+}
+
+.preparation-box {
+  border-radius: 12px;
+  background-color: var(--Rose-White);
+  padding: 28px;
+  margin-bottom: 28px;
+}
+
+.preparation-heading {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-sub-heading);
+  margin-bottom: 20px;
+}
+
+.preparation-list {
+  margin-left: 20px;
+}
+
+.preparation-list li {
+  padding-left: 16px;
 }
