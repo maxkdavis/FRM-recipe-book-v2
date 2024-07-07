@@ -37,6 +37,11 @@ hr {
   border: 0.5px solid #e3ddd7;
 }
 
+li::marker {
+  color: var(--primary-reddish-brown);
+  font-size: 12px;
+}
+
 #container {
   font-family: 'outfit', serif;
   background-color: var(--White);
@@ -90,12 +95,6 @@ hr {
   padding-left: 16px;
 }
 
-.preparation-list li::marker,
-.ingredients-list li::marker {
-  color: var(--primary-reddish-brown);
-  font-size: 12px;
-}
-
 .sub-heading {
   color: var(--primary-reddish-brown);
   font-family: 'Young Serif', serif;
@@ -104,7 +103,8 @@ hr {
   font-weight: 100;
 }
 
-.ingredients-box {
+.ingredients-box,
+.instructions-box {
   margin-bottom: 24px;
 }
 
@@ -113,8 +113,60 @@ hr {
   margin: 0 0 24px 5px;
 }
 
-.ingredients-list li {
+.ingredients-list li,
+.instructions-list li {
   color: var(--font);
   line-height: 150%;
   margin-bottom: 5px;
+}
+
+.instructions-list {
+  margin: 0 0 24px 5px;
+}
+
+.instructions-list li {
+  margin-left: 20px;
+  padding-left: 16px;
+  font-weight: 300;
+}
+
+.instructions-list li::marker {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nutrition-text {
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: var(--font);
+}
+
+.metric-text {
+  color: var(--primary-reddish-brown);
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  line-height: 150%;
+  font-size: 16px;
+}
+
+/* HTML TABLE STLYING */
+
+table {
+  box-sizing: border-box;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 0.5px solid #e3ddd7;
+}
+
+tr:last-child {
+  border: none;
+}
+
+td {
+  color: var(--font);
+  font-weight: 400;
+  padding: 16px 32px 16px;
 }
