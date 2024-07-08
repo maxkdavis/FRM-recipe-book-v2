@@ -47,7 +47,7 @@ li::marker {
   background-color: var(--White);
   border-radius: 24px;
   max-width: 736px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 40px;
 }
 
@@ -169,4 +169,29 @@ td {
   color: var(--font);
   font-weight: 400;
   padding: 16px 32px 16px;
+}
+
+/* MEDIA QUERY FOR MOBILE */
+@media (max-width: 500px) {
+  #container {
+    max-width: 375px;
+    border-radius: 0;
+    padding: 0px;
+  }
+
+  .hero-recipe-img {
+    border-radius: 0;
+  }
+
+  .text-header {
+    font-size: 36px;
+  }
+
+  header {
+    padding: 0 32px;
+  }
+
+  .preparation-box {
+    padding: 0 32px;
+  }
 }
